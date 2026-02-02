@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ma roue Sender</title>
+</head>
+<body>
+
+  <h1>Ma roue Sender fonctionne !</h1>
+  <p>Ta roue devrait apparaître ci-dessous grâce à Sender.</p>
+
+  <script>
+    (function (s, e, n, d, er) {
+      s['sender'] = er;
+      s[er] = s[er] || function () {
+        (s[er].q = s[er].q || []).push(arguments);
+      };
+      s[er].l = 1 * new Date();
+      var a = e.createElement(n),
+          m = e.getElementsByTagName(n)[0];
+      a.async = 1;
+      a.src = d;
+      m.parentNode.insertBefore(a, m);
+    })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+
+    sender('6969e2e7197954');
+  </script>
+
+</body>
+</html>
